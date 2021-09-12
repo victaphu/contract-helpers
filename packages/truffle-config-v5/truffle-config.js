@@ -57,6 +57,16 @@ module.exports = {
       gas: 6.9e6,
       gasPrice: 15000000001
     },
+    harmony: {
+      network_id: 1666600000,
+      provider: providerForNetwork('harmony'),
+      gas: 7000000
+    },
+    harmony: {
+      network_id: 1666700000,
+      provider: providerForNetwork('harmony_test'),
+      gas: 7000000
+    },
     mainnet: {
       network_id: 1,
       provider: providerForNetwork("mainnet"),
