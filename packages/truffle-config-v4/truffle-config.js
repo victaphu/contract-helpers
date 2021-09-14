@@ -34,7 +34,6 @@ const providerForNetwork = network => () => {
   if (!keys || keys.length === 0) {
     return new HDWalletProvider(mnemonic(), rpc)
   }
-
   return new HDWalletProvider(keys, rpc)
 }
 
@@ -62,9 +61,9 @@ module.exports = {
       provider: providerForNetwork('harmony'),
       gas: 7000000
     },
-    harmony: {
+    harmonyTest: {
       network_id: 1666700000,
-      provider: providerForNetwork('harmony_test'),
+      provider: providerForNetwork('harmonyTest'),
       gas: 7000000
     },
     mainnet: {
